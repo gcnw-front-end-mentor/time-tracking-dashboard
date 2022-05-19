@@ -18,6 +18,7 @@ body {
     background: #0E1323;
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
 }
 
 /* MAIN CONTAINER WITH NAME MAIN CONTAINER WITH NAME */
@@ -25,8 +26,10 @@ body {
 main {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     height: 50%;
     width: 77%;
+    border: 2px solid #7335D2;
 }
 
 .nameContainer {
@@ -34,8 +37,10 @@ main {
     flex-direction: column;
     height:100%;
     width: 23%;
+    min-width: 14rem;
     border-radius: 1rem;
     background: #1C204B;
+    /* margin-right: 3.5%; */
 }
 
 #nameBox {
@@ -86,6 +91,7 @@ main {
 /* GRID CONTAINER GRID CONTAINER GRID CONTAINER GRID CONTAINER */
 
 .gridContainer {
+    position: relative;
     display: grid;
     grid-gap: 5%;
     grid-template: repeat(2,1fr) / repeat(3,1fr);
@@ -94,20 +100,11 @@ main {
 }
 
 .timeBox {
-    position: relative;
     display: flex;
-    justify-content: end;
+    position: relative;
     width: 100%;
+    /* min-width: 14rem; */
     height: 100%;
-    border-radius: 1rem;
-    overflow: hidden;
-    margin-bottom: 2rem;
-}
-
-.timeBox > img {
-    width: 5.3rem;
-    height: 5.3rem;
-    margin-top: -1rem;
 }
 
 .infoBox {
@@ -118,9 +115,9 @@ main {
     justify-content: space-around;
     top: 18%;
     width: 100%;
-    height: 82%;
+    height:80%;
     background: #1C204B;
-    border-radius: inherit;
+    border-radius: 1rem;
     padding-left: 2rem;
 }
 
@@ -145,6 +142,23 @@ main {
     height: 0.3rem;
 }
 
+.backgroundCard {
+    position: absolute;
+    width: inherit;
+    height: 50%;
+    display: flex;
+    justify-content: end;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.backgroundCard > img {
+    width: 5.3rem;
+    height: 5.3rem;
+    margin: -1rem 1rem 0 0;
+
+}
+
 
 .lastWeek {
     color: #BBC0FF;
@@ -152,7 +166,6 @@ main {
 
 #workBackground {
     background-color: #FF8B64;
-
 }
 
 #playBackground {
@@ -175,6 +188,94 @@ main {
     background-color: #F1C75B;
 }
 
+
+@media only screen and (max-width: 1200px) {
+    html {
+        font-size: 12px;
+    }
+
+    .gridContainer {
+        grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 650px) {
+ 
+    *{
+        overflow: scroll;
+    }
+
+    main {
+        flex-direction: column;
+        height: fit-content;
+        width: 100%;
+        min-width: 400px;
+    }
+
+    .gridContainer {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin: 0;
+        width: 100%;
+
+    }
+
+    .nameContainer {
+        width: 100%;
+        height: auto;
+        margin:0 0 2rem 0;
+        padding-left: 0;
+    }
+
+    .nameContainer h1 {
+        font-size: 1.5rem;
+    }
+
+    .timeBox {
+        position: relative;
+        width: 100%;
+        height: 14rem;
+        border-radius: 1rem;
+        margin-bottom: 2rem;       
+    }
+
+    body {
+        height: auto;
+    }
+
+    .timeTitle {
+        width: 85%;
+    }
+    
+    .infoBox {
+        position: absolute;
+    }
+
+    .infoBox > div {
+
+        width: 85%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .infoBox h1 {
+        font-size: 2.1rem;
+        font-weight: 300;
+    }
+
+    #durationSelector {
+        flex-direction: row;
+        margin: 1.5rem;
+    }
+
+    .backgroundCard > img {
+        width: 7.3rem;
+        height: 7.3rem;
+        margin: -1rem 1rem 0 0;  
+    }
+}
 
 
 
