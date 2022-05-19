@@ -29,7 +29,6 @@ main {
     align-items: center;
     height: 50%;
     width: 77%;
-    border: 2px solid #7335D2;
 }
 
 .nameContainer {
@@ -88,6 +87,11 @@ main {
     height: 20%;
 }
 
+#durationSelector p:hover {
+    color: white;
+    cursor: pointer;
+}
+
 /* GRID CONTAINER GRID CONTAINER GRID CONTAINER GRID CONTAINER */
 
 .gridContainer {
@@ -97,6 +101,7 @@ main {
     grid-template: repeat(2,1fr) / repeat(3,1fr);
     width: 74%;
     height: 100%;
+    margin-left: 3%;
 }
 
 .timeBox {
@@ -119,6 +124,11 @@ main {
     background: #1C204B;
     border-radius: 1rem;
     padding-left: 2rem;
+    cursor: pointer;
+}
+
+.infoBox:hover {
+    background-color: #33397A;
 }
 
 .infoBox  h1{
@@ -132,15 +142,23 @@ main {
     display: flex;
     justify-content:space-between;
     align-items: center;
-    width: 76%;
+    width: 85%;
     font-weight: 500;
     font-size: 1.2rem;
 }
 
-.timeTitle img {
-    width: 1.4rem;
-    height: 0.3rem;
+.timeTitle svg {
+    color: #D8D8D8;
+    width: 1.8rem;
+    height: 0.5rem;
 }
+
+.timeTitle svg:hover {
+    color: white;
+    opacity: 1;
+    cursor: pointer;
+}
+
 
 .backgroundCard {
     position: absolute;
@@ -202,13 +220,17 @@ main {
 @media only screen and (max-width: 650px) {
  
     *{
+        overflow: hidden;
+    }
+
+    html {
         overflow: scroll;
     }
 
     main {
         flex-direction: column;
         height: fit-content;
-        width: 100%;
+        width: 95%;
         min-width: 400px;
     }
 
@@ -228,8 +250,12 @@ main {
         padding-left: 0;
     }
 
-    .nameContainer h1 {
-        font-size: 1.5rem;
+    #nameBox {
+        padding-bottom: 1rem;
+    }
+
+    #nameBox h1 {
+        font-size: 2.5rem;
     }
 
     .timeBox {
