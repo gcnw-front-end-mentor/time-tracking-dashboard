@@ -4,9 +4,13 @@
         <title>FEM: Time Tracking Dashboard</title>
         <link rel="icon" type="image/x-icon" href="./images/favicon-32x32.png">
         <link rel="stylesheet" type="text/css" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
     </head>
     <body>
         <main>
+<!-- MAIN CONTAINER WITH NAME AND DURATION SELECTION -->
             <div class="nameContainer">
                 <div id="nameBox">
                     <img src="./images/image-jeremy.png" alt="Image of Jeremy Robson" />
@@ -17,6 +21,76 @@
                     <p id="weekly">Weekly</p>
                     <p id="monthly">Monthly</p>
                 </div>
+            </div>
+<!-- GRID CONTAINER WITH TIME BOXES -->
+            <div class="gridContainer">
+<!-- WORK CARD -->
+                <div class="timeBox" id="workBackground">
+                    <img src="./images/icon-work.svg" alt="work icon" /> 
+                    <div id="workInfo" class="infoBox">
+                        <p class="timeTitle">Work <img src="./images/icon-ellipsis.svg" alt="ellipses" /></p>
+                        <div>
+                            <h1>32hrs</h1>
+                            <p class="lastWeek">Last Week - <span>36hrs</span></p>
+                        </div>
+                    </div>
+                </div>
+<!-- PLAY CARD -->
+                <div class="timeBox" id="playBackground">
+                    <img src="./images/icon-play.svg" alt="play icon" /> 
+                    <div id="playInfo" class="infoBox">
+                        <p class="timeTitle">Play <img src="./images/icon-ellipsis.svg" alt="ellipses" /></p>
+                        <div>
+                            <h1>10hrs</h1>
+                            <p class="lastWeek">Last Week - <span>8hrs</span></p>
+                        </div>
+                    </div>
+                </div>
+<!-- STUDY CARD -->
+                <div class="timeBox" id="studyBackground">
+                    <img src="./images/icon-study.svg" alt="study icon" /> 
+                    <div id="studyInfo" class="infoBox">
+                        <p class="timeTitle">Study <img src="./images/icon-ellipsis.svg" alt="ellipses" /></p>
+                        <div>
+                            <h1>4hrs</h1>
+                            <p class="lastWeek">Last Week - <span>7hrs</span></p>
+                        </div>
+                    </div>
+                </div>
+<!-- EXERCISE CARD -->
+                <div class="timeBox" id="exerciseBackground">
+                    <img src="./images/icon-exercise.svg" alt="exercise icon" /> 
+                    <div id="exerciseInfo" class="infoBox">
+                        <p class="timeTitle">Exercise <img src="./images/icon-ellipsis.svg" alt="ellipses" /></p>
+                        <div>
+                            <h1>4hrs</h1>
+                            <p class="lastWeek">Last Week - <span>5hrs</span></p>    
+                        </div>
+                    </div>
+                </div>
+<!-- SOCIAL CARD -->
+                <div class="timeBox" id="socialBackground">
+                    <img src="./images/icon-social.svg" alt="social icon" /> 
+                    <div id="socialInfo" class="infoBox">
+                        <p class="timeTitle">Social <img src="./images/icon-ellipsis.svg" alt="ellipses" /></p>
+                        <div>
+                            <h1>5hrs</h1>
+                            <p class="lastWeek">Last Week - <span>10hrs</span></p>    
+                        </div>
+                    </div>
+                </div>
+<!-- SELF CARE CARD -->
+                <div class="timeBox" id="selfCareBackground">
+                    <img src="./images/icon-self-care.svg" alt="self care icon" /> 
+                    <div id="selfCareInfo" class="infoBox">
+                        <p class="timeTitle">Self Care <img src="./images/icon-ellipsis.svg" alt="ellipses" /></p>
+                        <div>
+                            <h1>2hrs</h1>
+                            <p class="lastWeek">Last Week - <span>2hrs</span></p>    
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </main>
     </body>

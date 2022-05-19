@@ -5,17 +5,28 @@
     text-decoration: none;
 }
 
+html {
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    color: white;
+}
+
 body {
-    background: #1C204B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0E1323;
     width: 100vw;
     height: 100vh;
 }
 
+/* MAIN CONTAINER WITH NAME MAIN CONTAINER WITH NAME */
+
 main {
     display: flex;
+    justify-content: space-between;
     height: 50%;
     width: 77%;
-    border: 2px solid lightgreen;
 }
 
 .nameContainer {
@@ -23,6 +34,8 @@ main {
     flex-direction: column;
     height:100%;
     width: 23%;
+    border-radius: 1rem;
+    background: #1C204B;
 }
 
 #nameBox {
@@ -31,16 +44,136 @@ main {
     width: 100%;
     height: 68%;
     background: #5747EA;
+    border-radius: 1rem;
 }
 
 #nameBox img {
     height: auto;
-    width: 22%;
+    width: 31%;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    padding: 3px;
+    background-color: white;
+    border-radius: 50%;
 }
 
-#durationSelector {}
+#nameBox h1 {
+    font-size: 2.66rem;
+    font-weight: 300;
+    color: #FFFFFF;
+    margin-left: 2.2rem;
+    margin-top: 3rem;
+}
+
+#nameBox span {
+    color: #BBC0FF;
+    font-size: 1rem;
+    font-weight: 400;
+}
 
 
+#durationSelector {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    color: #7078C9;
+    height: 20%;
+}
+
+/* GRID CONTAINER GRID CONTAINER GRID CONTAINER GRID CONTAINER */
+
+.gridContainer {
+    display: grid;
+    grid-gap: 5%;
+    grid-template: repeat(2,1fr) / repeat(3,1fr);
+    width: 74%;
+    height: 100%;
+}
+
+.timeBox {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.timeBox > img {
+    width: 5.3rem;
+    height: 5.3rem;
+    margin-top: -1rem;
+}
+
+.infoBox {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    top: 18%;
+    width: 100%;
+    height: 82%;
+    background: #1C204B;
+    border-radius: inherit;
+    padding-left: 2rem;
+}
+
+.infoBox  h1{
+    font-size: 3.8rem;
+    font-weight: 300;
+    line-height: 4.4rem;
+    padding-bottom: 0.5rem;
+}
+
+.timeTitle {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 76%;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.timeTitle img {
+    width: 1.4rem;
+    height: 0.3rem;
+}
+
+
+.lastWeek {
+    color: #BBC0FF;
+}
+
+#workBackground {
+    background-color: #FF8B64;
+
+}
+
+#playBackground {
+    background-color: #55C2E6;
+}
+
+#studyBackground {
+    background-color: #FF5E7D;
+}
+
+#exerciseBackground {
+    background-color: #4BCF82;
+}
+
+#socialBackground {
+    background-color: #7335D2;
+}
+
+#selfCareBackground {
+    background-color: #F1C75B;
+}
 
 
 
