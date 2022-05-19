@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background: #1C204B;
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    height: 50%;
+    width: 77%;
+    border: 2px solid lightgreen;
+}
+
+.nameContainer {
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    width: 23%;
+}
+
+#nameBox {
+    display: inherit;
+    flex-direction: column;
+    width: 100%;
+    height: 68%;
+    background: #5747EA;
+}
+
+#nameBox img {
+    height: auto;
+    width: 22%;
+}
+
+#durationSelector {}
+
+
+
+
+
+
