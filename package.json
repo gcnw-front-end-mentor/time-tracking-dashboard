@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "![Design preview for the Time tracking dashboard coding challenge](./design/desktop-preview.jpg)",
   "main": "script.js",
+  "type": "module",
   "scripts": {
     "test": "mocha"
   },

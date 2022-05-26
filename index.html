@@ -8,6 +8,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+        <link href="./node_modules/mocha/mocha.css" rel="stylesheet" />
     </head>
     <body>
         <main>
@@ -34,7 +35,7 @@
                         <p class="timeTitle">Work 
                             <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="currentColor" fill-rule="evenodd"/></svg>
                         </p>
-                        <div>
+                        <div id="workHours">
                             <h1 class="currentHours">32hrs</h1>
                             <p class="timeSpan">Last Week - <span class="lastHours">36hrs</span></p>
                         </div>
@@ -49,7 +50,7 @@
                         <p class="timeTitle">Play 
                             <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="currentColor" fill-rule="evenodd"/></svg>
                         </p>
-                        <div>
+                        <div id="playHours">
                             <h1 class="currentHours">10hrs</h1>
                             <p class="timeSpan">Last Week - <span class="lastHours">8hrs</span></p>
                         </div>
@@ -64,7 +65,7 @@
                         <p class="timeTitle">Study 
                             <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="currentColor" fill-rule="evenodd"/></svg>
                         </p>
-                        <div>
+                        <div id="studyHours">
                             <h1 class="currentHours">4hrs</h1>
                             <p class="timeSpan">Last Week - <span class="lastHours">7hrs</span></p>
                         </div>
@@ -79,7 +80,7 @@
                         <p class="timeTitle">Exercise 
                             <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="currentColor" fill-rule="evenodd"/></svg>
                         </p>
-                        <div>
+                        <div id="exerciseHours">
                             <h1 class="currentHours">4hrs</h1>
                             <p class="timeSpan">Last Week - <span class="lastHours">5hrs</span></p>    
                         </div>
@@ -94,7 +95,7 @@
                         <p class="timeTitle">Social 
                             <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="currentColor" fill-rule="evenodd"/></svg>
                         </p>
-                        <div>
+                        <div id="socialHours">
                             <h1 class="currentHours">5hrs</h1>
                             <p class="timeSpan">Last Week - <span class="lastHours">10hrs</span></p>    
                         </div>
@@ -109,7 +110,7 @@
                         <p class="timeTitle">Self Care
                             <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="currentColor" fill-rule="evenodd"/></svg>
                         </p>
-                        <div>
+                        <div id="selfCareHours"> 
                             <h1 class="currentHours">2hrs</h1>
                             <p class="timeSpan">Last Week - <span class="lastHours">2hrs</span></p>    
                         </div>
@@ -118,7 +119,12 @@
 
             </div>
         </main>
-        <script type="text/javascript" src="./script.js"></script>
         <script type="text/javascript" src="./data.json"></script>
+        <script type="module" src="./script.js"></script>
+        <script type="module" src="./node_modules/chai/chai.js"></script>
+        <script type="module" src="./node_modules/mocha/mocha.js "></script>
+        <script type="module" src="./test/test.js"></script>
+
+        <div id="mocha"></div>
     </body>
 </html>
